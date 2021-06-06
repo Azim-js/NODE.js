@@ -10,8 +10,18 @@ let adder=function(a,b){
 
 let pi=3.14;
 
-// first way of exporting the variables to use are 
+// 1st way of exporting the variables to use are 
 
-module.exports.counter=counter;
-module.exports.adder=adder;
-module.exports.pi=pi;
+// module.exports.counter=counter;
+// module.exports.adder=adder;
+// module.exports.pi=pi;
+
+
+// 2nd way of exporting using json format
+
+
+module.exports={
+    counter:counter,
+    adder:adder,
+    pi:pi
+};

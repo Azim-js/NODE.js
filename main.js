@@ -10,4 +10,4 @@ console.log(stuff.pi);
 
 console.log(stuff.counter(['H','B','D']));
 
-console.log(stuff.adder(stuff.pi,1));
+console.log(stuff.adder(stuff.pi,2));
