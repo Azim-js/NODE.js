@@ -14,12 +14,19 @@ const fs=require('fs');
 
 // ASYNC methods to create and remove uisng callback functions 
 
-fs.mkdir('stuff',function(){
-    fs.readFile('readme.txt','utf-8',function(err,data){
-        fs.writeFile('./stuff/writeMe.txt',data,function(err,data){
-            if(err){
-                console.log('error: '+err);
-            }
-        });
+// fs.mkdir('stuff',function(){
+//     fs.readFile('readme.txt','utf-8',function(err,data){
+//         fs.writeFile('./stuff/writeMe.txt',data,function(err,data){
+//             if(err){
+//                 console.log('error: '+err);
+//             }
+//         });
+//     });
+// });
+
+// ASync rmdir
+fs.unlink('./stuff/writeMe.txt',function(){
+    fs.rmdir('stuff',function(){
+        console.log('sucess');
     });
-});
+})
