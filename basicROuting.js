@@ -12,6 +12,19 @@ const server=http.createServer(function(req,res){
         res.writeHead(200,{'Content-Type':'text/html'});
         fs.createReadStream(__dirname+"/contact.html").pipe(res);
     }
+    else if(req.url==='/api'){
+        res.writeHead(200,{'Content-Type':'application/json'});
+        const myObject={
+            name:'Azim',
+            job:'Intern',
+            age:'22'
+        };
+        res.end(JSON.stringify(myObject));
+    }
+    // if no path found serving 404 error page
+    else{
+
+    }
 
 });
 
