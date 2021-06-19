@@ -23,6 +23,9 @@ const server=http.createServer(function(req,res){
     }
     // if no path found serving 404 error page
     else{
+        res.writeHead(404,{'content-Type':'text/html'});
+        fs.createReadStream(__dirname+"/404.html").pipe(res);
+
 
     }
 
