@@ -1,0 +1,15 @@
+{
+  "name": "expresswork",
+  "version": "1.0.0",
+  "description": "dependincies neeed for the espress",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "azim",
+  "license": "ISC"
+}
