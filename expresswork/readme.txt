@@ -13,3 +13,7 @@ using nodemon to monitor application while serving
 npm install -g nodemon
 
 to run app is nodemon "appname"
+
+to insatll and run EJS
+
+npm install ejs -save -> will install and save the dependeincies
