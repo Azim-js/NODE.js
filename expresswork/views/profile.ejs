@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+    <head>Basic Web App</head>
+    <style>
+        body{
+            background:black;
+            font-family:sans-serif;
+            color:white;
+            padding:30px;
+        }
+        h1{
+            font-size:48px;
+            text-transform: uppercase;
+            letter-spacing:2px;
+            text-align:center;
+        }
+    </style>
+    <body>
+        <h1>WELCOME <%= data.name%> 'S Profile</h1>
+        <p><strong>Age :</strong><%=data.age%></p>
+        <p><strong>Job :</strong><%=data.job%></p>
+    </body>
+    </html>
