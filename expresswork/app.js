@@ -14,12 +14,16 @@ app.set("view engine",'ejs');
 
 app.get('/',function(req,res){
     // res.send("this is homepage");
-    res.sendFile(__dirname+"/index.html");
+    // res.sendFile(__dirname+"/index.html");
+
+   res.render("index") ;
 });
 
 app.get("/contact-us",function(req,res){
     // res.send("this is contact us page ");
-    res.sendFile(__dirname+"/contact.html");
+    // res.sendFile(__dirname+"/contact.html");
+
+    res.render("contact") ;
 });
 
 // creating :id params ot :names (Requesting from url to know the id or name dynamically)
