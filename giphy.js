@@ -18,6 +18,7 @@ function spellcheck(word){
             console.log(corrected["0"])
             const result=corrected["0"];
             console.log(result["value"])
+            
             let out = document.querySelector(".out");
             let txt = document.createElement("div");
             txt.textContent=result["value"];
