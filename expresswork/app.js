@@ -10,7 +10,8 @@ const app=express();
 
 
 app.get('/',function(req,res){
-    res.send("this is homepage");
+    // res.send("this is homepage");
+    res.sendFile(__dirname+"/index.html");
 });
 
 app.get("/contact-us",function(req,res){
