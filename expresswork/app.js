@@ -32,9 +32,10 @@ app.get("/profile/:name",function(req,res){
 const data={
     name:req.params.name,
     age:22,
-    job:"intern"
+    job:"intern",
+    hobbies:["readding","playing football","valorant","coding"]
 }
-res.render('profile',{data});
+res.render('profile',{data:data});
 
 });
 

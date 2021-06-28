@@ -15,10 +15,23 @@
             letter-spacing:2px;
             text-align:center;
         }
+        h2{
+            font-size:38px;
+            text-transform: uppercase;
+            letter-spacing:2px;
+            text-align:center;
+        }
     </style>
     <body>
         <h1>WELCOME <%= data.name%> 'S Profile</h1>
         <p><strong>Age :</strong><%=data.age%></p>
         <p><strong>Job :</strong><%=data.job%></p>
+        <h2>
+            <ul>
+                <% data.hobbies.forEach(function(item){%>
+                    <li><%= item%></li>
+                <%});%>
+            </ul>
+        </h2>
     </body>
     </html>
