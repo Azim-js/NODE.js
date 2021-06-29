@@ -23,11 +23,13 @@ app.get('/',function(req,res){
    res.render("index") ;
 });
 
+// geting the query string using req.query
+
 app.get("/contact-us",function(req,res){
     // res.send("this is contact us page ");
     // res.sendFile(__dirname+"/contact.html");
-
-    res.render("contact") ;
+    console.log(req.query);
+    res.render("contact",{qs:req.query}) ;
 });
 
 // creating :id params ot :names (Requesting from url to know the id or name dynamically)

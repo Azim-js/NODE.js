@@ -19,6 +19,19 @@
     <body>
         <%- include ('partials/nav.ejs') %>
         <h1>CONTACT US !!!</h1>
-        <p>-24/7 Avialable</p>
+        <!-- <p>-24/7 Avialable</p> -->
+    <form id='contact-form'>
+        <label for="who">Who do you want to contact ?</label>
+        <br/>
+        <input type="text" name="who" value="<%=qs.person%>"/>
+        <br/>
+        <label for="department"> Which Department ?</label>
+        <br/>
+        <input type="text" name="department" value="<%=qs.dept%>"/>
+        <br/>
+        <label for="email"> your Email </label>
+        <br/>
+        <input type="submit" value="submit"/>
+    </form>
     </body>
     </html>
