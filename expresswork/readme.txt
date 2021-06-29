@@ -17,3 +17,7 @@ to run app is nodemon "appname"
 to insatll and run EJS
 
 npm install ejs -save -> will install and save the dependeincies
+
+using body-parser to save the post request into object 
+
+->npm install body-parser

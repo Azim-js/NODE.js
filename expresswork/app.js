@@ -5,6 +5,11 @@ const express=require('express');
 // creating app(server functionalitis) 
 const app=express();
 
+// for post request for forms
+const bodyparser=require('body-parser');
+
+const urlencoder=bodyparser({extended:false});
+
 // creating a view to dislpay enginecd
 app.set("view engine",'ejs');
 
@@ -30,6 +35,12 @@ app.get("/contact-us",function(req,res){
     // res.sendFile(__dirname+"/contact.html");
     console.log(req.query);
     res.render("contact",{qs:req.query}) ;
+});
+app.post("/contact-us",urlencoder,function(req,res){
+    
+    console.log(req.body);
+    res.render("contact-us-sucess",{data:req.body});
+   
 });
 
 // creating :id params ot :names (Requesting from url to know the id or name dynamically)

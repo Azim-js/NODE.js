@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+    <head>Basic Web App</head>
+    <style>
+        body{
+            background:black;
+            font-family:sans-serif;
+            color:white;
+            padding:30px;
+        }
+        h1{
+            font-size:88px;
+            text-transform: uppercase;
+            letter-spacing:2px;
+            text-align:center;
+        }
+        strong{
+            color:red
+        }
+    </style>
+    <body>
+        <%- include ('partials/nav.ejs') %>
+        <h1>CONTACT US !!!</h1>
+        <center><h2> !!SUCESS !!</h2></center>
+        <p> YOU have contacted to <strong><%= data.who%> </strong>of the <strong><%= data.department%></strong> department.</p>
+        <p>you will be contacted with the following Email <strong><%= data.email %></strong></p>
+    </body>
+    </html>
