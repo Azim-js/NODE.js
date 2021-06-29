@@ -8,6 +8,10 @@ const app=express();
 // creating a view to dislpay enginecd
 app.set("view engine",'ejs');
 
+// to acess the Static files
+
+app.use('/assets',express.static('assets'));
+
 // http requests
 // .get(route,fn),.post(route,fn),.update(route,fn),.delete(route,fn)
 

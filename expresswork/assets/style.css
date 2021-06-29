@@ -1,0 +1,19 @@
+
+body{
+    background:black;
+    font-family:sans-serif;
+    color:white;
+    padding:30px;
+}
+h1{
+    font-size:48px;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    text-align:center;
+}
+h2{
+    font-size:38px;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    text-align:center;
+}

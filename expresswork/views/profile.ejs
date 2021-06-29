@@ -1,27 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-    <head>Basic Web App</head>
-    <style>
-        body{
-            background:black;
-            font-family:sans-serif;
-            color:white;
-            padding:30px;
-        }
-        h1{
-            font-size:48px;
-            text-transform: uppercase;
-            letter-spacing:2px;
-            text-align:center;
-        }
-        h2{
-            font-size:38px;
-            text-transform: uppercase;
-            letter-spacing:2px;
-            text-align:center;
-        }
-    </style>
+    <head>Basic Web App
+        <link href=" /assets/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+
     <body>
         <%- include ('partials/nav.ejs') %>
         <h1>WELCOME <%= data.name%> 'S Profile</h1>
