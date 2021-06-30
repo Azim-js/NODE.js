@@ -12,7 +12,7 @@ const controller=require("./controller/controller");
 app.set("view engine","ejs");
 
 // middleware to use static files
-app.use(express("./public"));
+app.use(express.static("./public"));
 
 // using the split code
 controller(app);
