@@ -1,20 +1,22 @@
 <html>
     <head>
         <title>TO-DO </title>
+        <!-- library to work with ajax post method -->
         <script src="https://code.jquery.com/jquery-1.12.3.min.js" intergrity="sha256-aaODHAgvwQ1bFOGXMex+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+        <script src="/assets/todo-list.js" defer></script>
         <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <h1>to-do list</h1>
-        <form>
+        <form >
             <input type="text" name="item" placeholder="Add new item...." required/>
             <button type="submit">AddItem</button>
 
         </form>
         <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
+            <% for(let i=0;i< item.length;i++){%>
+                <li><%=item[i].item %></li>
+                <% } %>
         </ul>
     </body>
 </html>
