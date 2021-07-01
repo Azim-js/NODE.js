@@ -20,6 +20,7 @@ module.exports=function(app){
     });
     app.delete("/todo/:item",function(req,res){
         data=data.filter(function(todo){
+            // replace the click list item whit blank space
             return todo.item.replace(/ /g,'-')!== req.params.item;
 
         });
