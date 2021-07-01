@@ -1,4 +1,4 @@
-const data=[{item:"Milk"},{item:"Eggs"},{item:"Bread"},{item:"Chocolate"}];
+let data=[{item:"Milk"},{item:"Eggs"},{item:"Bread"},{item:"Chocolate"}];
 
 const bodyParser=require('body-parser');
 
@@ -18,7 +18,14 @@ module.exports=function(app){
         // res.render("todo",{item:data});
     
     });
-    app.delete("/todo",function(req,res){
+    app.delete("/todo/:item",function(req,res){
+        data=data.filter(function(todo){
+            return todo.item.replace(/ /g,'-')!== req.params.item;
+
+        });
+
+        res.json(data);
+
 
     });
 }
