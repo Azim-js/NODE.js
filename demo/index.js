@@ -1,4 +1,4 @@
-console.log("dummy");
+console.log("dummy commits");
 
 console.log("Hi");
 
