@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t azim31/react-fe -f frontend/Dockerfile .
 script:
-  - docker run -e CI=true azim31/react-fe npm run test -- --coverage
+  - docker run -e CI=true zim31/react-fe npm run test
 
