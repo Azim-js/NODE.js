@@ -1,0 +1,11 @@
+# to make sure docker runs as root privelige 
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t azim31/react-fe -f Dockerfile .
+
+script:
+  - docker run azim31/react-fe npm run test -- --coverage
+
