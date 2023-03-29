@@ -10,7 +10,7 @@ function App() {
           Hi this is a Front end application 
         </p>
         <p>
-          New set of lines added 
+          Set of changes done to add Feature
         </p>
         <a
           className="App-link"
