@@ -4,6 +4,6 @@ sudo: required
 services:
   - docker
 before_install:
-  - docker build -t azim31/react-fe frontend/Dockerfile.dev
+  - docker build -t azim31/react-fe -f frontend/Dockerfile.dev
 script:
   - docker run -e CI=true azim31/react-fe npm run test -- --coverage
